@@ -44,3 +44,21 @@ body {
 .cells.filled {
     background-color: black;
 }
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+#reset {
+    font-size: 1.5rem;
+    border-radius: 6px;
+    border: outset;
+    font-weight: lighter;
+    padding: 5px 30px;
+}
+
+#reset:hover {
+    background-color: #dbdbdb;
+}
