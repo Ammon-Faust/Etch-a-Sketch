@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -14,4 +16,31 @@ body {
     font-weight: bold;
     color: hsl(0, 0%, 16%);
     margin: 60px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: outset;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    box-sizing: border-box; /* Include the border in the width and height calculations */
+}
+
+.cells {
+    width: calc(100% / 16); /* Adjust the width without subtracting the gap */
+    height: calc(100% / 16);
+    box-sizing: border-box; /* Include the border in the width and height calculations */
+    border: 1px solid transparent; /* Set the border color to transparent to eliminate gaps */
+}
+
+/* Ensure that hover styles have higher specificity */
+.cells:hover {
+    background-color: black; /* Adjust the hover background color as needed */
+}
+
+/* Additional styles for filled cells */
+.cells.filled {
+    background-color: black;
 }
