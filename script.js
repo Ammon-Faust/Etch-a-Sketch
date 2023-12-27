@@ -1,6 +1,8 @@
 const grid = document.getElementById("grid");
 const reset = document.getElementById("reset");
 const slider = document.getElementById("slider");
+const colors = document.getElementById("colors");
+
 
 function makeGrid(rows, cols) {
   
@@ -19,6 +21,8 @@ function makeGrid(rows, cols) {
 
         cell.addEventListener('mouseover', function() {
             this.classList.add('filled');
+
+            this.style.backgroundColor = selectedColor;
         });
 
         grid.appendChild(cell);
@@ -42,4 +46,9 @@ gridReset();
 slider.addEventListener('input', function() {
     const gridSize = parseInt(this.value); 
     makeGrid(gridSize, gridSize);
+});
+
+
+colors.addEventListener('input', function() {
+    selectedColor = this.value;
 });
