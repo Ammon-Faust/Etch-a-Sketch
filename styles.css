@@ -46,7 +46,13 @@ body {
     justify-content: center;
     align-items: center;
     margin: 80px;
+    gap: 40px;
 }
+
+#slider {
+    width: 80px;
+}
+
 #reset {
     font-size: 1.5rem;
     border-radius: 6px;
@@ -57,4 +63,24 @@ body {
 
 #reset:hover {
     background-color: #dbdbdb;
+}
+
+
+#colors {
+    background-color: inherit;
+    padding: 0;
+    height: 80px;
+    width: 80px;
+    border: none;
+    box-shadow: none;
+    border-radius: 50%;
+}
+
+#colors::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+#colors::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
 }
