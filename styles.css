@@ -24,6 +24,10 @@ body {
     width: 600px;
     margin: auto;
     box-sizing: border-box;
+    border: none;
+    -webkit-box-shadow: 1px 1px 10px 0px #000000; 
+    box-shadow: 1px 1px 20px 0px #000000;
+    border-radius: 5px;
 }
 
 .cells {
