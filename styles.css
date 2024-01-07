@@ -24,10 +24,11 @@ body {
     width: 600px;
     margin: auto;
     box-sizing: border-box;
-    border: none;
+    border: inline;
     -webkit-box-shadow: 1px 1px 10px 0px #000000; 
     box-shadow: 1px 1px 20px 0px #000000;
     border-radius: 5px;
+    background-color: white;
 }
 
 .cells {
@@ -60,9 +61,13 @@ body {
 #reset {
     font-size: 1.5rem;
     border-radius: 6px;
-    border: outset;
+    border: 1px solid;
     font-weight: lighter;
     padding: 5px 30px;
+}
+
+#reset:hover {
+    transform: scale(1.1);
 }
 
 #reset:hover {
@@ -86,5 +91,5 @@ body {
 
 #colors::-webkit-color-swatch {
     border: none;
-    border-radius: 50%;
+    border-radius: 20%;
 }
